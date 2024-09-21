@@ -1,0 +1,105 @@
+.main-container{
+    display: flex;
+    position: relative; 
+    background-color: antiquewhite; 
+    width: 70rem;
+    height: 60rem; 
+    margin-left: 20rem;
+    border-radius: 5rem;
+    box-shadow: .2rem 0.2rem .2rem rgba(0, 0, 0, .3);
+}
+#signup{    
+    position: absolute;
+    font-size:2.5rem;
+    color: blue;
+    margin-left: 30rem;
+    font-weight: bolder;
+}
+.form {
+    position: relative;
+    margin-top: 5rem ;
+    margin-left: 3rem;
+    width: 20rem;
+}
+
+
+.form input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #db4444;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b2727;
+    position: relative;
+    z-index:100;
+}
+
+.form input:focus,
+.form input:valid {
+  outline: 0;
+  border-bottom-color: rgb(54, 116, 136);
+}
+.form label {
+    position: absolute;
+    top: 20px;
+    left:0;
+    pointer-events: none;
+}
+.form label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form input:focus + label span,
+.form input:valid + label span {
+    color: rgb(50, 57, 59);
+    transform: translateY(-30px);
+  
+} 
+#cap{
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+    height: 3rem;
+    background-color: aqua;
+    margin-left: 25rem;
+    margin-top: -3rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: black;
+}
+
+#capimg{
+    display: flex;
+    width: 3rem;
+    margin-left: 35rem;
+    margin-top: -3rem;
+    cursor: pointer;
+}
+
+#submit{
+    display: flex;
+    background-color: blue;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+    margin-left: 30rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+#have-a-account{
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 40rem;
+    margin-left: -65rem;
+}
+#li{
+    color: #db4444;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style1.css">
+</head>
+
+<body>
+    <div> <a href="/" style="color: blue; font-size: 2rem;"> Go back to home</a></div>
+    <div class="main-container">
+
+        <form action="/create" method="post">
+            <div id="signup"> Signup </div>
+
+            <div class="form">
+                <input type="text" name="firstname" required>
+                <label for=""> First name</label>
+            </div>
+            <div class="form" style="display: flex; margin-left: 25rem; margin-top: -3.4rem;">
+                <input type="text" name="middlename" required>
+                <label for=""> Middle name</label>
+            </div>
+            <div class="form" style="display: flex; margin-left: 46rem; margin-top: -3.4rem;">
+                <input type="text" name="lastname" required>
+                <label for=""> Last name</label>
+            </div>
+            <div class="form" style="display: flex; ">
+                <input type="email" name="email" required>
+                <label for=""> Email</label>
+            </div>
+            <div class="form" style="display: flex; margin-left: 30rem; margin-top: -3.4rem;">
+                <input type="number" name="mobno" maxlength="10" required>
+                <label for=""> Mobile No</label>
+            </div>
+            <div class="form" style="display: flex; ">
+                <input type="password" name="password" required>
+                <label for=""> Password</label>
+            </div>
+            <div class="form" style="display: flex; margin-left: 30rem; margin-top: -3.4rem;">
+                <input type="password" name="Cpassword" required>
+                <label for=""> Confirm Password</label>
+            </div>
+            <div class="form" style="display: flex;">
+                <input type="text" name="captchahere" required>
+                <label for=""> Captcha Here</label>
+            </div>
+
+            <div id="cap"></div>
+
+            <img id="capimg" src="/image/refresh-svgrepo-com.svg" alt="" onclick="refresh()">
+
+
+            <input type="submit" id="submit" value="Submit" >
+
+            <p id="msg"></p>
+        </form>
+
+        <div id="have-a-account">
+            Already have a account ?
+            <a id="li" href="/login">Log  In</a>
+        </div>
+        </form>
+
+
+
+
+    </div>
+
+
+    <script src="/javascripts/script1.js"></script>
+
+</body>
+
+</html>
